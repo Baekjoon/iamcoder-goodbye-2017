@@ -1,0 +1,113 @@
+% template : olymp.sty (https://github.com/GassaFM/olymp.sty)
+% title page from https://github.com/koosaga/iamcoder/blob/master/tests/2016_mockicpc/document.tex
+
+\documentclass[12pt,a4paper,oneside]{article}
+
+\RequirePackage[nonfrench]{kotex}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{olymp}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{color} % for colored text
+\usepackage{import} % for changing current dir
+\usepackage{epigraph}
+\usepackage{daytime} % for displaying version number and date
+\usepackage{wrapfig} % for having text alongside pictures
+\usepackage{verbatim}
+
+\newcommand{\importproblem}[1]{\import{}{./problems/#1.tex}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\newcommand{\blankpage}{
+\newpage
+\begin{center}
+	\hspace{0pt}
+	\vfill
+	\huge Blank Page
+	\hspace{0pt}
+	\vfill
+\end{center}
+}
+
+\contest
+{나는코더다 2017 송년대회}%
+{2017. 12. 11}%
+{19:00 - 23:30}
+
+\binoppenalty=10000
+\relpenalty=10000
+\exhyphenpenalty=10000
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+	{2017년 12월 11일 월요일 19:00 - 23:30\par}
+	{경기과학고등학교 33기 김동현, 김현수, 신승원\par}
+	\vspace{2cm}
+	{\huge 나는코더다 2017 송년 대회 \par}
+	\vspace{3cm}
+	{\Large 문제 배열은 난이도 순이 아닙니다.\par}
+	{\Large 모든 문제를 읽는 것을 권장합니다.\par}
+	\vspace{3cm}
+	\begin{table}[h]
+		\centering
+		\renewcommand{\arraystretch}{1.2}
+		\begin{tabular}{|l|M{5cm}|M{2cm}|M{2.5cm}|}
+			\hline
+			& 문제 이름 & 시간 제한 & 메모리 제한 \\ \hline
+			A & 경곽 침공 & 5초 & 512MB \\ \hline
+			B & 구몬 알고리즘 & 1초 & 512MB \\ \hline
+			C & 민돌 투어 & 1초 & 512MB \\ \hline
+			D & 비밀 요원 & 2초 & 512MB \\ \hline
+			E & 스킬 트리 & 2초 & 512MB \\ \hline
+			F & 아티스트 & 1초 & 512MB \\ \hline
+			G & 약 팔기 & 1초 & 512MB \\ \hline
+			H & 이름 궁합 & 1초 & 512MB \\ \hline
+			I & 정과프 해적단 & 1초 & 512MB \\ \hline
+			J & 쿵! 쿵! & 2초 & 512MB \\ \hline
+			K & 태풍의 아들 KDH & 2초 & 512MB \\ \hline
+			L & 현수시티 & 1초 & 512MB \\ \hline
+		\end{tabular}
+	\end{table}
+	
+  	\newpage
+	\thispagestyle{empty}
+	\hspace{0pt}
+	\vfill
+	\huge Blank Page
+	\hspace{0pt}
+	\vfill
+	
+\end{titlepage}
+
+\raggedbottom
+
+\importproblem{A_gshsinvade}
+
+\importproblem{B_kumonalgorithm}
+
+\importproblem{C_mindoltour}
+
+\importproblem{D_secretagent}
+
+\importproblem{E_skilltree}
+
+\importproblem{F_artist}
+
+\importproblem{G_drugseller}
+
+\importproblem{H_namechemi}
+
+\importproblem{I_pirate}
+
+\importproblem{J_kungkung}
+
+\importproblem{K_typhoon}
+
+\importproblem{L_hyunsoocity}
+
+\end{document}
